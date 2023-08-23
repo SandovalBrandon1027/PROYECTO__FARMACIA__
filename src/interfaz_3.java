@@ -3,11 +3,14 @@ import javax.swing.*;
 public class interfaz_3 extends JFrame {
 
     private JPanel interfaz_cajero;
-    private JLabel text;
+    private JTextField textField1;
+    private JPasswordField passwordField1;
+    private JButton ingresarButton;
+
     public interfaz_3() {
         setTitle("Farmacia su economia");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación al cerrar este formulario
-        setSize(600, 400); // Tamaño del formulario
+        setSize(550, 400); // Tamaño del formulario
         setLocationRelativeTo(null); // Centrar en la pantalla
         setContentPane(interfaz_cajero); // Establecer el panel como contenido
 

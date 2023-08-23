@@ -4,18 +4,36 @@ import java.awt.event.ActionListener;
 
 public class interfaz_2 extends JFrame {
     private JPanel interfaz_administrador;
+    private JButton ingresarProductoButton;
+    private JButton agregarUsuarioButton;
+    private JButton revisarVentasButton;
 
     public interfaz_2() {
         setTitle("Formulario de Administrador");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación al cerrar este formulario
-        setSize(600, 400); // Tamaño del formulario
-        setLocationRelativeTo(null); // Centrar en la pantalla
-        setContentPane(interfaz_administrador); // Establecer el panel como contenido
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(600, 400);
+        setLocationRelativeTo(null);
+        setContentPane(interfaz_administrador);
 
-        // Aquí puedes agregar más componentes y configuraciones específicas para el formulario del administrador
 
+
+
+
+
+        ingresarProductoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose(); // Cerrar el formulario actual
+            }
+        });
+
+        agregarUsuarioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose(); // Cerrar el formulario actual
+            }
+        });
         setVisible(true); // Mostrar el formulario
-
     }
 
     public static void main(String[] args) {

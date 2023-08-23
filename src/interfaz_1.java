@@ -30,10 +30,12 @@ public class interfaz_1 extends JDialog{
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose(); // Cerrar el formulario actual
-                interfaz_3 adminForm = new interfaz_3();
+                interfaz_3 cajeroForm = new interfaz_3();
 
             }
         });
+
+
         setVisible(true);
     }
 
