@@ -2,13 +2,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class interfaz_2 extends JFrame {
+public class seleccionar_accion extends JFrame {
     private JPanel interfaz_administrador;
     private JButton ingresarProductoButton;
     private JButton agregarUsuarioButton;
     private JButton revisarVentasButton;
+    private JButton regresarButton;
 
-    public interfaz_2() {
+    public seleccionar_accion() {
         setTitle("Formulario de Administrador");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 400);
@@ -31,14 +32,28 @@ public class interfaz_2 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose(); // Cerrar el formulario actual
+                registro_usuarios Registro = new registro_usuarios();
             }
         });
-        setVisible(true); // Mostrar el formulario
+        regresarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                login iinterfaz1 = new login();
+
+
+            }
+        });
+
+        setVisible(true); // Mostrar el formularioç
+
+
     }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new interfaz_2();
+            new seleccionar_accion();
         });
     }
+
 }
